@@ -91,7 +91,7 @@ namespace _1DCA
                         R = oldLine[i + 1];
                     }
                     // rule 73: !((P && R) || (P ^ Q ^ R))
-                    //rule ?
+                    //rule 150: P ^ Q ^ R
                     currentLine[i] = P ^ Q ^ R;
                 }
                 toConvert.Add(currentLine);
