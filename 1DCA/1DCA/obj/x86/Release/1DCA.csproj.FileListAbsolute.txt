@@ -1,0 +1,5 @@
+c:\users\paul\documents\visual studio 2012\Projects\1DCA\1DCA\1DCA\bin\x86\Release\1DCA.exe
+c:\users\paul\documents\visual studio 2012\Projects\1DCA\1DCA\1DCA\bin\x86\Release\1DCA.pdb
+c:\users\paul\documents\visual studio 2012\Projects\1DCA\1DCA\1DCA\obj\x86\Release\Microsoft.Xna.Framework.RuntimeProfile.txt
+c:\users\paul\documents\visual studio 2012\Projects\1DCA\1DCA\1DCA\obj\x86\Release\1DCA.exe
+c:\users\paul\documents\visual studio 2012\Projects\1DCA\1DCA\1DCA\obj\x86\Release\1DCA.pdb
