@@ -4,3 +4,9 @@ c:\users\paul\documents\visual studio 2012\Projects\1DCA\1DCA\1DCA\obj\x86\Debug
 c:\users\paul\documents\visual studio 2012\Projects\1DCA\1DCA\1DCA\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
 c:\users\paul\documents\visual studio 2012\Projects\1DCA\1DCA\1DCA\obj\x86\Debug\1DCA.exe
 c:\users\paul\documents\visual studio 2012\Projects\1DCA\1DCA\1DCA\obj\x86\Debug\1DCA.pdb
+C:\Users\etu420\Documents\Visual Studio 2012\Projects\TD\1DCellularAutomata\1DCA\1DCA\bin\x86\Debug\1DCA.exe
+C:\Users\etu420\Documents\Visual Studio 2012\Projects\TD\1DCellularAutomata\1DCA\1DCA\bin\x86\Debug\1DCA.pdb
+C:\Users\etu420\Documents\Visual Studio 2012\Projects\TD\1DCellularAutomata\1DCA\1DCA\obj\x86\Debug\1DCA.csprojResolveAssemblyReference.cache
+C:\Users\etu420\Documents\Visual Studio 2012\Projects\TD\1DCellularAutomata\1DCA\1DCA\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\etu420\Documents\Visual Studio 2012\Projects\TD\1DCellularAutomata\1DCA\1DCA\obj\x86\Debug\1DCA.exe
+C:\Users\etu420\Documents\Visual Studio 2012\Projects\TD\1DCellularAutomata\1DCA\1DCA\obj\x86\Debug\1DCA.pdb
