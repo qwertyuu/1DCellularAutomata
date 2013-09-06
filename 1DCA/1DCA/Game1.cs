@@ -92,7 +92,7 @@ namespace _1DCA
                     }
                     // rule 73: !((P && R) || (P ^ Q ^ R))
                     //rule 150: P ^ Q ^ R
-                    currentLine[i] = P ^ Q ^ R;
+                    currentLine[i] = P && Q;
                 }
                 toConvert.Add(currentLine);
                 oldLine = currentLine;
@@ -102,13 +102,11 @@ namespace _1DCA
         private void Calculate(object obj)
         {
             bool exit = false;
+                int count1 = toConvert.Count;
             while (!exit)
             {
-                int count1 = toConvert.Count;
-                if (count1 != 0)
+                if (count1 != GraphicsDevice.Viewport.Height)
                 {
-                    while (toConvert.Count != count1)
-                    {
                         count1 = toConvert.Count;
                         int count2 = oldLine.Length;
                         Color[] buf = new Color[count1 * count2];
@@ -122,8 +120,10 @@ namespace _1DCA
                         }
                         toAdd.SetData(buf);
                         toDraw = toAdd;
-                        exit = true;
-                    }
+                }
+                else
+                {
+                    exit = true;
                 }
             }
         }
@@ -168,7 +168,10 @@ namespace _1DCA
         {
             GraphicsDevice.Clear(Color.White);
             spriteBatch.Begin(SpriteSortMode.Deferred, BlendState.AlphaBlend, SamplerState.PointClamp, null, null, null, cam.viewMatrix);
-            spriteBatch.Draw(toDraw, Vector2.Zero, Color.Black);
+            if (toDraw != null)
+            {
+                spriteBatch.Draw(toDraw, Vector2.Zero, Color.Black);
+            }
             spriteBatch.End();
             // TODO: Add your drawing code here
 
