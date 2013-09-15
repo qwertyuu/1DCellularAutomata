@@ -47,9 +47,9 @@ namespace _1DCA
             IsMouseVisible = true;
             cam = new Camera();
             toConvert = new List<bool[]>();
-            System.Threading.Thread t = new System.Threading.Thread(new System.Threading.ParameterizedThreadStart(Calculate));
+            System.Threading.Thread toTexture = new System.Threading.Thread(new System.Threading.ParameterizedThreadStart(Calculate));
             System.Threading.Thread calculator = new System.Threading.Thread(new System.Threading.ParameterizedThreadStart(Algo));
-            t.IsBackground = true;
+            toTexture.IsBackground = true;
             calculator.IsBackground = true;
             oldLine = new bool[GraphicsDevice.Viewport.Width];
             Random swag = new Random();
@@ -62,7 +62,7 @@ namespace _1DCA
             toConvert.Add(oldLine);
             lessOne = oldLine.Length - 1;
             calculator.Start();
-            t.Start();
+            toTexture.Start();
             base.Initialize();
         }
 
@@ -90,9 +90,11 @@ namespace _1DCA
                         P = oldLine[i - 1];
                         R = oldLine[i + 1];
                     }
-                    // rule 73: !((P && R) || (P ^ Q ^ R))
+                    //rule 73: !((P && R) || (P ^ Q ^ R))
+                    //rule 126: P ^ Q || R ^ Q
+                    //rule 210: P ^ (Q || R) ^ Q
                     //rule 150: P ^ Q ^ R
-                    currentLine[i] = P && Q;
+                    currentLine[i] = P ^ (Q || R) ^ Q;
                 }
                 toConvert.Add(currentLine);
                 oldLine = currentLine;
@@ -102,10 +104,10 @@ namespace _1DCA
         private void Calculate(object obj)
         {
             bool exit = false;
-                int count1 = toConvert.Count;
+            int count1 = toConvert.Count;
             while (!exit)
             {
-                if (count1 != GraphicsDevice.Viewport.Height)
+                if (count1 / 2 != GraphicsDevice.Viewport.Height)
                 {
                         count1 = toConvert.Count;
                         int count2 = oldLine.Length;
