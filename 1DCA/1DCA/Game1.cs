@@ -21,7 +21,7 @@ namespace _1DCA
         bool[] oldLine;
         bool[] currentLine;
         int lessOne;
-        double ratio = 20d/40d;
+        double ratio = 0.5;
         Texture2D toDraw;
         List<bool[]> toConvert;
         Camera cam;
@@ -92,7 +92,7 @@ namespace _1DCA
                     }
                     // rule 73: !((P && R) || (P ^ Q ^ R))
                     //rule 150: P ^ Q ^ R
-                    currentLine[i] = P && Q;
+                    currentLine[i] = P ^ Q ^ R;
                 }
                 toConvert.Add(currentLine);
                 oldLine = currentLine;
