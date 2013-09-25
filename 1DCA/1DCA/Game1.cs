@@ -22,11 +22,7 @@ namespace _1DCA
         bool[] oldLine;
         bool[] currentLine;
         int lessOne;
-<<<<<<< HEAD
-        double ratio = 0.5;
-=======
         const double ratio = 0.5;
->>>>>>> e70dd785f5be0474d0ce5b57d3d031dfd03e00ac
         Texture2D toDraw;
         List<bool[]> toConvert;
         Camera cam;
@@ -127,8 +123,9 @@ namespace _1DCA
                     //rule 126: P ^ Q || R ^ Q
                     //rule 210: P ^ (Q || R) ^ Q
                     //rule 150: P ^ Q ^ R
+                    //rule 105: P == Q ^ R
                     //voici l'algorithme qui sert à calculer l'image. Assez simple
-                    currentLine[i] = P ^ (Q || R) ^ Q;
+                    currentLine[i] = P == Q ^ R;
                 }
                 //on ajoute la ligne fraîchement calculée à la liste pour conversion
                 toConvert.Add(currentLine);

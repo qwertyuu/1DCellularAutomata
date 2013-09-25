@@ -8,15 +8,15 @@
       <TargetProfile>Reach</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>C:\Users\Paul\documents\visual studio 2012\Projects\1DCA\1DCA\1DCAContent\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\Paul\documents\visual studio 2012\Projects\1DCA\1DCA\1DCA\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\Paul\documents\visual studio 2012\Projects\1DCA\1DCA\1DCA\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\Paul\documents\visual studio 2012\Projects\1DCA\1DCA\1DCA\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>C:\Users\etu420\Documents\Visual Studio 2012\Projects\TD\1DCellularAutomata\1DCA\1DCAContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\etu420\Documents\Visual Studio 2012\Projects\TD\1DCellularAutomata\1DCA\1DCA\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\etu420\Documents\Visual Studio 2012\Projects\TD\1DCellularAutomata\1DCA\1DCA\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\etu420\Documents\Visual Studio 2012\Projects\TD\1DCellularAutomata\1DCA\1DCA\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>
-        <Key>C:\windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
-        <Value>2013-08-06T02:45:48.8909374-04:00</Value>
+        <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
+        <Value>2013-08-31T03:29:29.9293271-04:00</Value>
       </Assembly>
     </Assemblies>
   </Asset>
