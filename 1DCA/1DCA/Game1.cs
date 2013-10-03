@@ -123,9 +123,9 @@ namespace _1DCA
                     //rule 126: P ^ Q || R ^ Q
                     //rule 210: P ^ (Q || R) ^ Q
                     //rule 150: P ^ Q ^ R
-
+                    //rule 105: P == Q ^ R
                     //voici l'algorithme qui sert à calculer l'image. Assez simple
-                    currentLine[i] = P ^ (Q || R) ^ Q;
+                    currentLine[i] = P == Q ^ R;
                 }
                 //on ajoute la ligne fraîchement calculée à la liste pour conversion
                 toConvert.Add(currentLine);
