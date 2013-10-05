@@ -124,6 +124,7 @@ namespace _1DCA
                     //rule 210: P ^ (Q || R) ^ Q
                     //rule 150: P ^ Q ^ R
                     //rule 105: P == Q ^ R
+                    //rule 135: P == (Q && R)
                     //voici l'algorithme qui sert à calculer l'image. Assez simple
                     currentLine[i] = P == Q ^ R;
                 }
